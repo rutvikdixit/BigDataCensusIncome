@@ -23,7 +23,7 @@ Used census_hive.hql to give structure to the data, and export as clean csv file
 Used pyspark package in a python script to fit 4 machine learning models on the data, using a 70-30 split.
 Tried Logistic Regression, SVM, Random Forest and Gradient Boosted Trees.
 
-Achieved Accuracy:
+Achieved Accuracy:\n
 Logistic Regression:    87.49%\
 SVM:                    86.39%\
 Random Forest:          85.54%\
