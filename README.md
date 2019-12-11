@@ -6,7 +6,7 @@ The goal of the project is to predict if the income is greater than or less than
 
 Raw Data Files: adult.data (32K records), adult.test (16K records)
 
-Uploaded adult.data and adult.test into S3 cluster
+Uploaded adult.data and adult.test into S3 cluster.
 
 Data Cleaning:
 Used census_cleaning.pig to remove missing records, and merge the two sets into one as well as clean up a few other inconsistencies in the data.
@@ -24,10 +24,10 @@ Used pyspark package in a python script to fit 4 machine learning models on the 
 Tried Logistic Regression, SVM, Random Forest and Gradient Boosted Trees.
 
 Achieved Accuracy:
-Logistic Regression:    87.49%\n
-SVM:                    86.39%\n
-Random Forest:          85.54%\n
-Gradient Boosted Trees: 87.89%\n
+Logistic Regression:    87.49%\
+SVM:                    86.39%\
+Random Forest:          85.54%\
+Gradient Boosted Trees: 87.89%\
 
 Command:
 spark-submit spark-census.py
