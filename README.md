@@ -1,7 +1,8 @@
 # Big Data Census Income Analysis
 Big Data Analysis of Census Income Dataset using AWS EMR, S3, PySpark, Pig and Hive
 
-Data Source: https://archive.ics.uci.edu/ml/datasets/Census+Income\
+Data Source: https://archive.ics.uci.edu/ml/datasets/Census+Income
+
 The goal of the project is to predict if the income is greater than or less than 50K annually.
 
 ##### Raw Data Files: adult.data (32K records), adult.test (16K records)
@@ -9,7 +10,7 @@ The goal of the project is to predict if the income is greater than or less than
 Uploaded adult.data and adult.test into S3 cluster.
 
 ## Data Cleaning:
-Used census_cleaning.pig to remove missing records, and merge the two sets into one as well as clean up a few other inconsistencies in the data.\
+Used census_cleaning.pig to remove missing records, and merge the two sets into one as well as clean up a few other inconsistencies in the data.
 ##### Commands: 
 `pig s3://bucket-name/census_cleaning.pig`
 
@@ -23,7 +24,7 @@ Used census_hive.hql to give structure to the data, and export as clean csv file
 Used pyspark package in a python script to fit 4 machine learning models on the data, using a 70-30 split.
 Tried Logistic Regression, SVM, Random Forest and Gradient Boosted Trees.
 
-Achieved Accuracy:\n
+Achieved Accuracy:\
 Logistic Regression:    87.49%\
 SVM:                    86.39%\
 Random Forest:          85.54%\
