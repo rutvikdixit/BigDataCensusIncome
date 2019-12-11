@@ -1,4 +1,4 @@
-# BigDataCensusIncome
+# Big Data Census Income Analysis
 Big Data Analysis of Census Income Dataset using AWS EMR, S3, PySpark, Pig and Hive
 
 Data Source: https://archive.ics.uci.edu/ml/datasets/Census+Income
@@ -14,7 +14,7 @@ Used census_cleaning.pig to remove missing records, and merge the two sets into 
 `pig s3://bucket-name/census_cleaning.pig`
 
 Used census_hive.hql to give structure to the data, and export as clean csv file.
-##### Commands:\
+##### Commands:
 `hive -f s3://bucket-name/census_hive.hql`\
 `hive -e 'select * from Census' | sed 's/[\t]/,/g' > census_full.csv`\
 `aws s3 cp census_full.csv s3://bucket-name/Processed-data/`
