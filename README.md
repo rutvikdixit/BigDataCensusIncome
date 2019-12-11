@@ -1,10 +1,10 @@
 # Big Data Census Income Analysis
 Big Data Analysis of Census Income Dataset using AWS EMR, S3, PySpark, Pig and Hive
 
-Data Source: https://archive.ics.uci.edu/ml/datasets/Census+Income
+Data Source: https://archive.ics.uci.edu/ml/datasets/Census+Income\
 The goal of the project is to predict if the income is greater than or less than 50K annually.
 
-Raw Data Files: adult.data (32K records), adult.test (16K records)
+##### Raw Data Files: adult.data (32K records), adult.test (16K records)
 
 Uploaded adult.data and adult.test into S3 cluster.
 
