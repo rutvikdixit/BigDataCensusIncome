@@ -5,7 +5,7 @@ Data Source: https://archive.ics.uci.edu/ml/datasets/Census+Income
 
 The goal of the project is to predict if the income is greater than or less than 50K annually.
 
-##### Raw Data Files: adult.data (32K records), adult.test (16K records)
+##### Raw Data Files: adult.data (32K records), adult.test (16K records) -> 14 independent variables, 1 dependent variable
 
 Uploaded adult.data and adult.test into S3 cluster.
 
@@ -22,6 +22,7 @@ Used census_hive.hql to give structure to the data, and export as clean csv file
 
 ## Running Spark ML:
 Used pyspark package in a python script to fit 4 machine learning models on the data, using a 70-30 split.
+Finalised 8 out of 14 features for machine learning, using an iterative appproach for feature selection.
 Tried Logistic Regression, SVM, Random Forest and Gradient Boosted Trees.
 
 Achieved Accuracy:\
